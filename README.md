@@ -10,7 +10,8 @@ Câmera Android para criar vídeos com controles profissionais e processamento l
 2. Grave um clipe curto em 720p/30 e confira áudio, duração e reprodução na biblioteca.
 3. Abra **Ferramentas** pela engrenagem. Busque pelo que deseja fazer e use ★ para escolher três atalhos.
 4. Ative os recursos individualmente. Resolução/FPS ficam no indicador superior; Galeria abre seus clipes.
-5. Para edição, use **Imagem → Preparar imagem para edição** e a LUT LumaLog correspondente à versão/força gravadas.
+5. Para começar com desfoque, use **Foco → Ajuste automático · Pessoas/Objetos → Natural**. Pessoas são recortadas automaticamente; objetos exigem toque dentro do alvo. Em **Exposição**, use **Ajustar exposição automaticamente** para voltar à AE e desligar ganho digital.
+6. Para edição, use **Imagem → Preparar imagem para edição** e a LUT LumaLog correspondente à versão/força gravadas.
 
 O APK oficial mantém a identidade de assinatura das versões anteriores para atualizar o app preservando os dados. Chaves e senhas de assinatura ficam fora do repositório. Uma compilação própria usa outra assinatura e não substitui o APK oficial diretamente.
 
@@ -19,9 +20,9 @@ O APK oficial mantém a identidade de assinatura das versões anteriores para at
 | Área | Recursos |
 | --- | --- |
 | Gravação | Resolução/FPS anunciados pela câmera, bitrate, áudio opcional e partes numeradas |
-| Exposição | ISO, obturador/ângulo, EV, balanço de branco e travas AE/AWB conforme suporte |
+| Exposição | Ajuste automático com EV moderado, ISO, obturador/ângulo, balanço de branco e travas AE/AWB conforme suporte |
 | Imagem | LumaLog v1/v2, ganho, temperatura, contraste, saturação, nitidez e efeitos individuais |
-| Foco | Automático/manual, trava, seleção por toque, acompanhamento de pessoas/objetos e foco A/B |
+| Foco | Lente automática/manual, trava, foco A/B, acompanhamento por IA e ajustes de desfoque Natural/Equilibrado/Forte para Pessoas/Objetos |
 | Zoom | Pontos A/B, duração, direção e interrupção do movimento suave |
 | Estabilização | Equilibrado/Câmera parada/Em movimento; força, suavidade, recorte e pequenos giros |
 | Monitores | Histograma, waveform, RGB parade, vectorscope, zebra, false color e peaking |
@@ -40,7 +41,7 @@ Desfoque e acompanhamento IA são recursos experimentais, com processamento no a
 
 A estabilização estima movimento de imagem e usa um recorte fixo; reduz campo de visão/detalhe e não corrige rolling shutter ou borrão. Não exige OIS/EIS ou giroscópio. Controle manual e microfone externo dependem do que o Android e a lente oferecem.
 
-As validações automatizadas e os testes físicos são registrados separadamente em [VALIDACAO.md](docs/validation/VALIDACAO.md). Use o [roteiro no A14](docs/validation/TESTE_DIARIO_A14.md) para comparar lentes, orientações, áudio, player e gravações longas. Nenhum teste automatizado garante compatibilidade com todos os drivers.
+A entrega passou com **383 testes JVM e 117 contratos gráficos**. No A14, o APK final gravou um clipe frontal Log de **25,2 s**, com áudio presente, tempos crescentes, decodificação integral aprovada e fim de reprodução interno observado. A cena não tinha pessoa; qualidade do recorte em cabelos/movimento e uso prolongado continuam pendentes. As evidências estão separadas em [VALIDACAO.md](docs/validation/VALIDACAO.md). Use o [roteiro no A14](docs/validation/TESTE_DIARIO_A14.md) para comparar lentes, orientações, áudio, player e gravações longas. Nenhum teste automatizado garante compatibilidade com todos os drivers.
 
 ## Compilar
 
