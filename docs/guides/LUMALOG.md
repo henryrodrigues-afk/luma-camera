@@ -52,7 +52,7 @@ O menu oferece **v1 legado** e **v2 para edição**. Clipes antigos da versão 0
 
 ## Verificação e referências
 
-Comparação visual sintética reproduzível: [log-v2-comparacao.png](../../dist/resources/previews/log-v2-comparacao.png), gerada por `scripts/tools/RenderLogComparison.cjs` com cores quantizadas e a LUT v2 real. Mostra SDR, perfil a 100% e retorno pela LUT. Não é captura do A14 nem medição de ruído ou compressão H.264.
+Comparação visual sintética reproduzível: a ferramenta `scripts/tools/RenderLogComparison.cjs` gera localmente `dist/resources/previews/log-v2-comparacao.png` com cores quantizadas e a LUT v2 real. Essa prévia gerada não integra o Git/ZIP público. Mostra SDR, perfil a 100% e retorno pela LUT; não é captura do A14 nem medição de ruído ou compressão H.264.
 
 `SimulatedLogTest` verifica a curva legado, a redução de crominância v2, preservação da luminância, inversas de cores em forças completas/parciais, quantização de 8 bits e interpolação trilinear da LUT 3D exportada. `scripts/VerifyShaders.cjs` compara os shaders reais com a referência, confirma a restauração da prévia e mantém a cópia destinada ao encoder sem assistência. Também verifica os quatro cantos da imagem nas quatro rotações, com e sem espelhamento.
 
