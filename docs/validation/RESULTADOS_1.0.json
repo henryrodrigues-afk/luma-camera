@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUtc": "2026-10-01T18:41:16Z",
+  "version": {
+    "name": "1.0.0",
+    "code": 100,
+    "minSdk": 29,
+    "targetSdk": 34,
+    "abi": "arm64-v8a"
+  },
+  "automated": {
+    "build": {
+      "status": "passed",
+      "variants": [
+        "debug",
+        "release"
+      ],
+      "durationSeconds": 301,
+      "frozenInputsUnchanged": true,
+      "report": "dist/reports/1.0/build-final-1.0.log",
+      "inputsReport": "dist/reports/1.0/build-inputs-1.0.json"
+    },
+    "junit": {
+      "tests": 383,
+      "suites": 49,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "testcaseCount": 383,
+      "reports": "dist/reports/1.0/tests"
+    },
+    "lint": {
+      "debug": {
+        "warnings": 23,
+        "errors": 0,
+        "fatal": 0
+      },
+      "release": {
+        "warnings": 23,
+        "errors": 0,
+        "fatal": 0
+      },
+      "warningIds": {
+        "SetTextI18n": 12,
+        "GradleDependency": 3,
+        "UseSwitchCompatOrMaterialCode": 2,
+        "ChromeOsAbiSupport": 1,
+        "ClickableViewAccessibility": 1,
+        "DataExtractionRules": 1,
+        "Recycle": 1,
+        "UnusedAttribute": 1,
+        "ViewConstructor": 1
+      }
+    },
+    "shaders": {
+      "passed": 117,
+      "backend": "WebGL/ANGLE",
+      "androidEglVerified": false,
+      "androidExternalOesVerified": false,
+      "cameraShaderTextureTargetSubstituted": true,
+      "newWeightedBlurContracts": 11,
+      "report": "dist/reports/1.0/shader-verification.json"
+    },
+    "apkInspection": {
+      "status": "passed",
+      "ownAssets": 13,
+      "workspaceAssetsIdentical": true,
+      "nativeAbis": [
+        "arm64-v8a"
+      ],
+      "nativeLibrariesPerApk": 2,
+      "versionName": "1.0.0",
+      "versionCode": 100,
+      "minSdk": 29,
+      "targetSdk": 34,
+      "internetPermission": false,
+      "accessNetworkStatePermission": false,
+      "releaseDebuggable": false,
+      "debugDebuggable": true,
+      "expectedFinalHashesMatched": true,
+      "unchangedDuringInspection": true,
+      "report": "dist/reports/1.0/apk-inspection.json"
+    },
+    "signing": {
+      "apksignerPassed": true,
+      "v2Verified": true,
+      "previousCertificatePreserved": true,
+      "certificateSha256": "7b0bdcb9a3d294968f3a51b824876050df617afa4bf7560565ec1bf3c34046b2"
+    }
+  },
+  "artifacts": {
+    "release": {
+      "bytes": 60972667,
+      "sha256": "F22AF9F5EEC2B787C94470CD0B0DD23872EB0D704A8FF8AFA644760434071A65",
+      "url": "https://github.com/henryrodrigues-afk/luma-camera/releases/download/v1.0.0/LumaCamera-1.0-arm64-v8a.apk"
+    },
+    "debug": {
+      "bytes": 64847291,
+      "sha256": "7F7778A4788F8F2B7B5E00D56C3C9C6643B4302387E309C8DD998CE08AD439E3",
+      "url": "https://github.com/henryrodrigues-afk/luma-camera/releases/download/v1.0.0/LumaCamera-1.0-arm64-v8a-debug.apk"
+    },
+    "source": {
+      "url": "https://github.com/henryrodrigues-afk/luma-camera/releases/download/v1.0.0/LumaCamera-1.0-source.zip",
+      "sha256ManifestUrl": "https://github.com/henryrodrigues-afk/luma-camera/releases/download/v1.0.0/SHA256SUMS.txt",
+      "hashStoredOnlyInExternalManifest": true
+    }
+  },
+  "physical": {
+    "device": {
+      "model": "Samsung Galaxy A14 5G",
+      "variant": "SM-A146M",
+      "androidVersion": 15
+    },
+    "baseline": {
+      "revision": "before_final_automatic_blur_and_exposure_adjustments",
+      "testedReleaseSha256": "AD1347DE3BC831A23B8A43A71AB1F596BCCACE2AC73481B5BC70C2183317A482",
+      "updatePreservedSignatureAndOriginals": true,
+      "player": {
+        "syntheticDurationSeconds": [
+          3,
+          20
+        ],
+        "reachedEnd": true,
+        "pauseAtSecondsApprox": 1,
+        "forwardSeekSeconds": 5,
+        "seekResultSecondsApprox": 6,
+        "muteAndUnmuteObserved": true,
+        "systemVolumeZeroMessageObserved": true
+      },
+      "rear": {
+        "video": {
+          "width": 1080,
+          "height": 1920,
+          "profile": "LumaLog v2",
+          "durationSeconds": 10.975956,
+          "frames": 329
+        },
+        "audio": {
+          "codec": "AAC",
+          "sampleRateHz": 44100,
+          "channels": 1,
+          "frames": 471
+        },
+        "timestamps": {
+          "duplicate": 0,
+          "regressive": 0,
+          "startOffsetMillisecondsApprox": 6.893,
+          "endOffsetMillisecondsApprox": 33
+        }
+      },
+      "front": {
+        "video": {
+          "codec": "H.264",
+          "width": 1080,
+          "height": 1920,
+          "durationSeconds": 9.004333,
+          "averageFpsApprox": 29.986
+        },
+        "audio": {
+          "codec": "AAC",
+          "sampleRateHz": 44100,
+          "channels": 1,
+          "durationSeconds": 8.93932,
+          "startMilliseconds": 22.404,
+          "decodedNonSilent": true,
+          "decodedMeanDb": -34.5,
+          "decodedMaxDb": -18.1
+        },
+        "playerReachedEnd": true
+      },
+      "segmentedSession": {
+        "savedParts": 3,
+        "videoDurationSeconds": [
+          58.059878,
+          57.632089,
+          12.654354
+        ],
+        "videoWidth": 1080,
+        "videoHeight": 1920,
+        "audioCodec": "AAC",
+        "audioSampleRateHz": 44100,
+        "audioChannels": 1,
+        "videoStartAfterAudioMillisecondsApprox": [
+          2.3,
+          89.2,
+          61.6
+        ],
+        "gaplessJoinVerified": false,
+        "acousticSyncVerified": false
+      },
+      "combinedFileAudit": {
+        "files": 5,
+        "videoPackets": 4375,
+        "audioPackets": 6382,
+        "duplicatePtsOrDts": 0,
+        "regressivePtsOrDts": 0,
+        "completeHostDecodeExitCode": 0,
+        "decodeWarnings": 0,
+        "decodeErrors": 0,
+        "demuxerTimebaseAndPassthrough": true
+      },
+      "highlightsSample": {
+        "sampleFps": 2,
+        "encodedYPeakRange": [
+          213,
+          218
+        ],
+        "restoredProfile": "LumaLog v2 100%",
+        "restoredWidth": 320,
+        "restoredHeight": 180,
+        "restoredRgbPeakRange": [
+          227,
+          237
+        ],
+        "observedRestoredSamplesAtLeast250": 0,
+        "fullResolutionOrSensorClippingVerified": false
+      },
+      "layout": {
+        "normalPortraitNoOverlapObserved": true,
+        "previewFrontMirroredIntentional": true,
+        "formalAsymmetricGeometryPlateVerified": false
+      }
+    },
+    "finalRelease": {
+      "testedReleaseSha256": "F22AF9F5EEC2B787C94470CD0B0DD23872EB0D704A8FF8AFA644760434071A65",
+      "status": "passed_selected_scenarios",
+      "signedUpdateInstalled": true,
+      "scene": {
+        "camera": "front",
+        "phonePointedAtCeiling": true,
+        "charging": true,
+        "personPresent": false
+      },
+      "automaticActions": {
+        "peopleNaturalApplied": true,
+        "peopleIntensity": 0.22,
+        "objectsNaturalWaitingForPoint": true,
+        "objectsRequireExplicitTap": true,
+        "exposureApplied": true,
+        "exposureEvApprox": -0.3,
+        "isoAutomatic": true,
+        "shutterAutomatic": true,
+        "aeLockReleased": true,
+        "peopleContourStability": 0.42,
+        "peopleEdgeSoftness": 0.2,
+        "peopleAnalysisQuality": "light",
+        "peopleTransitionSeconds": 0.7,
+        "whiteBalance": "Auto",
+        "peopleRefinementsVisibleAndAddressable": true
+      },
+      "recording": {
+        "savedParts": 1,
+        "video": {
+          "codec": "H.264",
+          "width": 1080,
+          "height": 1920,
+          "durationSeconds": 25.202311,
+          "frames": 753,
+          "averageFpsApprox": 29.878,
+          "profile": "LumaLog v2",
+          "profileStrength": 1,
+          "startSeconds": 0.0141
+        },
+        "audio": {
+          "codec": "AAC",
+          "sampleRateHz": 44100,
+          "channels": 1,
+          "packets": 1085,
+          "decodedNonSilent": true,
+          "decodedSamples": 1111040,
+          "decodedMeanDbfs": -38.5,
+          "decodedPeakDbfs": -20.3,
+          "humanListeningVerified": false,
+          "acousticSyncVerified": false,
+          "durationSeconds": 25.192608,
+          "startSeconds": 0
+        },
+        "peopleNaturalEnabled": true,
+        "subjectTrackingEnabled": true,
+        "stabilizationEnabled": true,
+        "timestamps": {
+          "duplicatePtsOrDts": 0,
+          "regressivePtsOrDts": 0,
+          "regressiveFramePts": 0,
+          "duplicateFramePts": 0,
+          "maximumVideoPtsGapMilliseconds": 79.589
+        },
+        "completeHostDecode": {
+          "exitCode": 0,
+          "diagnostics": 0,
+          "demuxerTimebaseAndPassthrough": true
+        },
+        "durationSeconds": 25.216411
+      },
+      "player": {
+        "reachedEnd": true,
+        "replayActionAvailable": true,
+        "audioEnabled": true,
+        "displayedPositionSeconds": 25,
+        "displayedDurationSeconds": 25
+      },
+      "hairAndMovingSegmentationQualityVerified": false,
+      "verifiedChecks": [
+        "automatic_people_natural_and_refinements",
+        "automatic_objects_natural_waits_for_explicit_tap",
+        "automatic_exposure",
+        "new_front_1080p_log_capture_saved",
+        "strict_pts_dts_and_frame_pts",
+        "complete_host_decode",
+        "decoded_audio_present",
+        "internal_player_reached_end",
+        "aggregate_capture_to_mask_callback_age"
+      ],
+      "captureToMaskCallbackAge": {
+        "scope": "aggregate_person_analysis_windows_from_final_process_log_not_only_recorded_clip",
+        "windows": 80,
+        "analyses": 5909,
+        "weightedAverageMillisecondsApprox": 60.09,
+        "maximumMilliseconds": 1265,
+        "expiredResults": 2,
+        "androidRuntimeLogEntries": 0,
+        "personPresentInScene": false,
+        "includesPixelPreparationAndModelCallback": true,
+        "glassToGlassLatencyVerified": false,
+        "weightedMeanFromIntegerWindowMeans": true
+      },
+      "returnedToHome": true,
+      "preferencesAndMediaPreserved": true
+    },
+    "scenariosPending": [
+      "hair_and_moving_segmentation_quality",
+      "object_identity_occlusion_and_loss",
+      "physical_focus_lock_zoom_and_ab",
+      "all_player_fallbacks_lifecycle_audio_focus_and_noisy",
+      "external_microphone_routes",
+      "interrupted_part_switch_and_gapless_continuity",
+      "low_space_copy_recovery_and_uri_concurrency",
+      "landscape_large_fonts_small_windows",
+      "sustained_fps_heat_battery_and_extended_sessions",
+      "monitor_and_lut_android_visual_quality"
+    ]
+  },
+  "configuration": {
+    "releaseMinificationEnabled": false,
+    "customReleaseSigningRequiresEnvironment": true,
+    "inferenceLocal": true,
+    "simulatedLogSdrBits": 8,
+    "depthMap": false,
+    "maskOpticalFlowOrReprojection": false
+  },
+  "limits": [
+    "Resultados físicos anteriores não aprovam automaticamente o APK final.",
+    "Testes JVM e WebGL/ANGLE não executam câmera, gravador, modelos ou driver EGL Android.",
+    "IA/desfoque/acompanhamento experimentais; objetos exigem seleção explícita e podem perder o alvo.",
+    "Budgets de máscara contam desde a captura e incluem inferência: pessoas 250–600 ms, objetos 450–1.200 ms; não são latência garantida.",
+    "LumaLog não acrescenta RAW, 10 bits ou faixa dinâmica nem recupera realces cortados.",
+    "Amostras de realces, áudio decodificado e timestamps não comprovam clipping do sensor ou sincronismo acústico.",
+    "Estabilização usa recorte e não corrige rolling shutter, borrão ou perspectiva.",
+    "O hash do ZIP da fonte existe apenas no manifesto externo; não é incluído dentro do próprio ZIP."
+  ]
+}
