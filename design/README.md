@@ -2,7 +2,7 @@
 
 O conceito HTML da versão 0.7 está preservado em [archive/0.7/luma-0.7.html](archive/0.7/luma-0.7.html). Ele documenta uma referência histórica; a interface Android atual está implementada em [MainActivity.kt](../app/src/main/java/com/lumacamera/MainActivity.kt) e nas classes de `app/src/main/java/com/lumacamera/ui/`.
 
-A imagem renderizada desse conceito fica em [dist/resources/previews/luma-0.7-board.png](../dist/resources/previews/luma-0.7-board.png). Para renderizar novamente, execute na raiz:
+A imagem renderizada desse conceito é uma saída local em `dist/resources/previews/luma-0.7-board.png` e não integra o Git/ZIP público. Para gerar essa prévia, execute na raiz:
 
 ```powershell
 node scripts/tools/RenderDesign.cjs
